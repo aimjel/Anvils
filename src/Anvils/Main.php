@@ -19,6 +19,7 @@ class Main extends PluginBase{
 class Checker extends PluginTask{
   
   public function __construct(Main $plugin){
+    parent::__construct($plugin);
     $this->plugin = $plugin;
   }
   
@@ -30,8 +31,8 @@ class Checker extends PluginTask{
     $this->getOwner();
     foreach($this->getPlugin()->getServer()->getOnlinePlayers() as $players){
       $player = $players;
-      if($player->getItemInHand() !== null){
-        $player->getItemInHand()->setCustomName($player->getItemInHand()->getCustomName());
+      if($player->getInventory()->getItemInHand() !== null){
+        $player->getInventory()->getItemInHand()->setCustomName($player->getInventory()->getItemInHand()->getCustomName());
       }
     }
   }
