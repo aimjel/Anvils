@@ -1,5 +1,6 @@
+---
 name: Anvils
-main: Anvils\Main
-author: Teamblocket
-api: 3.0.0-ALPHA7
-version: 1.0
+version: 0.0.1
+main: Angel\Anvils\Main
+api: 3.18.1
+...
