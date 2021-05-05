@@ -1,6 +1,8 @@
 ---
 name: Anvils
-version: 0.0.1
 main: Angel\Anvils\Main
-api: 3.18.1
+api: 3.19.1
+version: 0.1.0
+mcpe-protocols: 431
+author: Angel
 ...
